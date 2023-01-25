@@ -10,13 +10,18 @@ body {
     background-color: var(--light);
 }
 
-.card {
-    padding: 10px;
-    margin: 10px;
+.card-container{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 5px;
+    margin: 5px;
+    flex: 0 1 calc(25% - 1em)
+   
+ 
 
 }
 
@@ -24,4 +29,30 @@ img {
     width: 250px;
   
    
+}
+@media screen and (min-width: 40em) {
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+ 
+    .card {
+        flex: 0 1 calc(25% - 1em)
+    }
+}
+ 
+@media screen and (min-width: 60em) {
+    .card-container {
+   }
+     
+    .card {
+     }
+}
+ 
+ 
+@media screen and (min-width: 52em) {
+    .centered { 
+        
+    }
 }
